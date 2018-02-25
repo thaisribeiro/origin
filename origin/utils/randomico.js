@@ -9,8 +9,13 @@ function sample(arr) {
     return arr[Math.random(min, max)];
 }
 
+function removeAcentos(str){
+    return str.replace(/[^0-9a-z]/gi, '');
+}
+
 exports = {
     random: random,
-    sample: sample
+    sample: sample,
+    removeAcentos: removeAcentos
 }
   
