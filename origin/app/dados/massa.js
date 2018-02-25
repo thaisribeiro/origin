@@ -1,5 +1,5 @@
 const randomico = require('../../utils/randomico');
-import {
+const {
   cidade,
   email,
   empresas,
@@ -9,7 +9,7 @@ import {
   pais,
   telefone,
   string
-} from('../../massa');
+} = require ('../../massa');
 
 module.exports = {
   cidade: randomico.sample(cidade),
