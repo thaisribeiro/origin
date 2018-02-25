@@ -1,15 +1,13 @@
-const numero = require('../utils/numero');
-const inteiro = require('../utils/inteiro');
-const cpf_cnpj = require('../utils/cpf_cnpj');
-const randomico = require('../utils/randomico');
-const utils = require('../utils/utils');
-const massa = require('./dados/massa');
+const numero = require('../utils/numero')
+const inteiro = require('../utils/inteiro')
+const cpfCnpj = require('../utils/cpf_cnpj')
+const massa = require('./dados/massa')
 
-exports = {
+module.exports = {
   inteiro: inteiro,
   numero: numero,
-  cpf: cpf_cnpj.cpf,
-  cnpj: cpf_cnpj.cnpj,
+  cpf: cpfCnpj.cpf,
+  cnpj: cpfCnpj.cnpj,
   cidade: massa.cidade,
   email: massa.email,
   empresas: massa.empresas,

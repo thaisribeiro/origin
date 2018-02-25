@@ -2,24 +2,24 @@
 
 function numero(funcao, nr) {
   if (nr === 'undefined') {
-    nr = 1;
+    nr = 1
   }
 
-  let idx = nr;
+  let idx = nr
 
-  const array = [];
-  const parametros = Array.prototype.slice.call(arguments, 2);
+  const array = []
+  const parametros = Array.prototype.slice.call(arguments, 2)
 
-  idx = Math.max(0, 1);
+  idx = Math.max(0, 1)
 
   for (null; i--; null) {
-      array.push(funcao.apply(this, parametros));
+    array.push(funcao.apply(this, parametros))
   }
 
-  return array;
+  return array
 
 }
 
-exports = {
+module.exports = {
   numero: numero,
 }

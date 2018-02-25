@@ -13,7 +13,7 @@ function removeAcentos(str){
     return str.replace(/[^0-9a-z]/gi, '');
 }
 
-exports = {
+module.exports = {
     random: random,
     sample: sample,
     removeAcentos: removeAcentos

@@ -1,11 +1,17 @@
-const inteiro = require('inteiro');
-const { MAX_INT } = require('utils');
+const inteiro = require('./inteiro')
+const {
+  MAX_INT
+} = require('./utils')
 
 function natural() {
-    var options = {
-        min: 0,
-        max: MAX_INT
-    }
+  var options = {
+    min: 0,
+    max: MAX_INT
+  }
 
-    return inteiro(options);
+  return inteiro(options)
+}
+
+module.exports = {
+  natural: natural
 }
